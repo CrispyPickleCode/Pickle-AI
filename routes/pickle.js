@@ -12,7 +12,7 @@ router.get('/:type', (req, res, next) => {
     if (type === 'dill'){
         msg = 'Wow, I love dill pickles! They are so sweet!';
     } else {
-        msg = 'Hmmm, I\'ve never heard of a ${type} pickle before';
+        msg = `Hmmm, I\'ve never heard of a ${type} pickle before`;
     }
 
     res.send(msg);
