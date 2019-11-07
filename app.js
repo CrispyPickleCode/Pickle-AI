@@ -8,7 +8,8 @@ const routeId = require('./routes/id');
 
 const app = express();
 
-app.use(log('dev'));
+// Enable for http request logging
+// app.use(log('dev'));
 
 app.use(favicon('./favicon.ico'));
 
