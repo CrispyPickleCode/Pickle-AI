@@ -4,6 +4,7 @@
   "description": "Pickle Picker powered with Artificial Intelligence ",
   "main": "server.js",
   "scripts": {
+    "preinstall": "cp .env_sample .env",
     "test": "mocha",
     "start": "node server.js"
   },
