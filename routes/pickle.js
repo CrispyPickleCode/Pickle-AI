@@ -7,7 +7,6 @@ router.get('/', (req, res, next) => {
 
 router.get('/:type', (req, res, next) => {
     const type = req.params.type;
-    console.log('Recieved ' + type);
     var msg = '';
     if (type === 'dill'){
         msg = 'Wow, I love dill pickles! They are so sweet!';
