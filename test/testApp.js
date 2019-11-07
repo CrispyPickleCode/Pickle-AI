@@ -32,6 +32,15 @@ describe('Server', function(){
                 res.should.have.property('text').eql('Wow, I love dill pickles! They are so sweet!', "Thingy");
             })
     });
+    
+    it('GET /pickle/spicy', function () {
+        chai.request(server)
+            .get('/pickle/spicy')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.should.have.property('text').eql('Spicy pickles are good in small quantities', "Thingy");
+            })
+    });
 
     it('GET /pickle/unknown', function () {
         chai.request(server)

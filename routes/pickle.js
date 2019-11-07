@@ -10,6 +10,8 @@ router.get('/:type', (req, res, next) => {
     var msg = '';
     if (type === 'dill'){
         msg = 'Wow, I love dill pickles! They are so sweet!';
+    } else if (type === 'spicy') {
+        msg = 'Spicy pickles are good in small quantities';
     } else {
         msg = `Hmmm, I\'ve never heard of a ${type} pickle before`;
     }
