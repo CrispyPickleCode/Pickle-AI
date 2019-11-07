@@ -2,3 +2,9 @@ language: node_js
 
 node_js:
     - node
+    
+notifications:
+    email:
+        - CrispyPickleCode@gmail.com
+        on_success: always
+        on_failure: always
