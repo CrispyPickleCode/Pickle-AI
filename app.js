@@ -19,7 +19,7 @@ app.use('/pickle', routePickle);
 app.use('/id', routeId);
 
 app.use((req, res, next) => {
-    res.send('Here I am, on the home page');
+    res.send('Hello! Welcome, go to /pickle');
 });
 
 module.exports = app;
