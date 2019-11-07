@@ -41,6 +41,15 @@ describe('Server', function(){
                 res.should.have.property('text').eql('Spicy pickles are good in small quantities', "Thingy");
             })
     });
+    
+    it('GET /pickle/sour', function () {
+        chai.request(server)
+            .get('/pickle/sour')
+            .end((err, res) => {
+                res.should.have.status(200);
+                res.should.have.property('text').eql('Sour pickles, the classic pickle', "Thingy");
+            })
+    });
 
     it('GET /pickle/unknown', function () {
         chai.request(server)
