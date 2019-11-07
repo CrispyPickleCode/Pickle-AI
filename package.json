@@ -1,0 +1,32 @@
+{
+  "name": "pickle-ai",
+  "version": "1.0.0",
+  "description": "Pickle Picker powered with Artificial Intelligence ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/CrispyPickleCode/Pickle-AI.git"
+  },
+  "keywords": [
+    "pickle",
+    "picker",
+    "ai"
+  ],
+  "author": "Steven Zilberberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CrispyPickleCode/Pickle-AI/issues"
+  },
+  "homepage": "https://github.com/CrispyPickleCode/Pickle-AI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
